@@ -9,6 +9,14 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "12px",
+                "left" : "24px",
+                "right" : "24px",
+                "top" : "12px"
+              }
+            },
             "layoutDirectionDesktop" : "row",
             "layoutDirectionMobile" : "column",
             "layoutDirectionTablet" : "column",

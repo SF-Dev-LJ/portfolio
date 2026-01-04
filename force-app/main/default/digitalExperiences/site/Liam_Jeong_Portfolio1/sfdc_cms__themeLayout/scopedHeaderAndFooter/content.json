@@ -33,6 +33,24 @@
             "sectionVerticalAlign" : "center"
           },
           "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "brandName" : "Liam Jeong",
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "0px",
+                    "left" : "0px",
+                    "right" : "0px",
+                    "top" : "0px"
+                  }
+                },
+                "logoAltText" : "Logo",
+                "navigationItems" : "[{\"id\":\"home\",\"label\":\"Home\",\"url\":\"/\"},{\"id\":\"experience\",\"label\":\"Experience\",\"url\":\"/experience\"},{\"id\":\"projects\",\"label\":\"Projects\",\"url\":\"/projects\"},{\"id\":\"education\",\"label\":\"Education\",\"url\":\"/education\"},{\"id\":\"contact\",\"label\":\"Contact\",\"url\":\"/contact\"}]"
+              },
+              "definition" : "c:portfolioNavigation",
+              "id" : "19b2e696-6cc5-42c9-88e0-e3d71bf4e4f5",
+              "type" : "component"
+            } ],
             "id" : "e5cf4b67-790b-457e-80cb-43d6a4e19f8b",
             "name" : "headerSection",
             "title" : "Column 1",
