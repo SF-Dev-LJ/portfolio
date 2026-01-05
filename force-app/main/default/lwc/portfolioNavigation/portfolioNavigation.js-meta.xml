@@ -18,19 +18,6 @@
                 default="Liam Jeong"
             />
             <property 
-                name="logoUrl" 
-                type="String" 
-                label="Logo URL" 
-                description="URL to the logo image (optional)"
-            />
-            <property 
-                name="logoAltText" 
-                type="String" 
-                label="Logo Alt Text" 
-                description="Alternative text for the logo image (for accessibility)"
-                default="Home"
-            />
-            <property 
                 name="navigationItems" 
                 type="String" 
                 label="Navigation Items (JSON)" 

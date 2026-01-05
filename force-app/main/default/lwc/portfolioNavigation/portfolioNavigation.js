@@ -1,6 +1,7 @@
 import { LightningElement, api, track } from 'lwc';
 import { NavigationMixin } from 'lightning/navigation';
 import basePath from '@salesforce/community/basePath';
+import PORTFOLIO_LOGO from '@salesforce/resourceUrl/LJLogoBlue';
 
 /**
  * Portfolio Navigation Component
@@ -55,16 +56,16 @@ export default class PortfolioNavigation extends NavigationMixin(LightningElemen
     @api brandName = 'Liam Jeong';
 
     /**
-     * Logo URL (optional)
+     * Logo URL from static resource
      * @type {string}
      */
-    @api logoUrl;
+    logoUrl = PORTFOLIO_LOGO;
 
     /**
      * Logo alt text for accessibility
      * @type {string}
      */
-    @api logoAltText = 'Home';
+    logoAltText = 'Liam Jeong - Home';
 
     @track isMobileMenuOpen = false;
     @track currentPath = '';
