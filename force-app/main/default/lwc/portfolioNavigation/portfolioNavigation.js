@@ -1,5 +1,5 @@
-import { LightningElement, api, track } from 'lwc';
-import { NavigationMixin } from 'lightning/navigation';
+import { LightningElement, api, track, wire } from 'lwc';
+import { NavigationMixin, CurrentPageReference } from 'lightning/navigation';
 import basePath from '@salesforce/community/basePath';
 import PORTFOLIO_LOGO from '@salesforce/resourceUrl/LJLogoBlue';
 
@@ -75,12 +75,26 @@ export default class PortfolioNavigation extends NavigationMixin(LightningElemen
     @track srAnnouncement = '';
 
     /**
+     * Wire adapter to detect page navigation changes
+     * This automatically updates when the page changes via NavigationMixin
+     */
+    @wire(CurrentPageReference)
+    handlePageReference(pageRef) {
+        if (pageRef) {
+            // Update current path when page reference changes
+            this.currentPath = this.getCurrentPath();
+        }
+    }
+
+    /**
      * Lifecycle hook - Component connected to DOM
      */
     connectedCallback() {
         this.currentPath = this.getCurrentPath();
         this.handleResize = this.handleResize.bind(this);
+        this.handlePopState = this.handlePopState.bind(this);
         window.addEventListener('resize', this.handleResize);
+        window.addEventListener('popstate', this.handlePopState);
     }
 
     /**
@@ -88,6 +102,14 @@ export default class PortfolioNavigation extends NavigationMixin(LightningElemen
      */
     disconnectedCallback() {
         window.removeEventListener('resize', this.handleResize);
+        window.removeEventListener('popstate', this.handlePopState);
+    }
+
+    /**
+     * Handle browser back/forward navigation
+     */
+    handlePopState() {
+        this.currentPath = this.getCurrentPath();
     }
 
     /**
