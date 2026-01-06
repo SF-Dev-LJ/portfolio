@@ -3,6 +3,10 @@ import { NavigationMixin, CurrentPageReference } from 'lightning/navigation';
 import basePath from '@salesforce/community/basePath';
 import PORTFOLIO_LOGOS from '@salesforce/resourceUrl/portfolioLogos';
 
+// Static resource contains a subfolder named "portfolio logos" with the image files.
+const LOGO_BASE = `${PORTFOLIO_LOGOS}/portfolio logos`;
+const logoPath = (fileName) => `${LOGO_BASE}/${fileName}`;
+
 /**
  * Portfolio Navigation Component
  * A WCAG 2.1 AA compliant navigation component for Experience Cloud sites.
@@ -59,7 +63,7 @@ export default class PortfolioNavigation extends NavigationMixin(LightningElemen
      * Logo URL from static resource
      * @type {string}
      */
-    logoUrl = `${PORTFOLIO_LOGOS}/LJ Logo(Blue).png`;
+    logoUrl = logoPath('LJ Logo(Blue).png');
 
     /**
      * Logo alt text for accessibility
