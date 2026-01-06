@@ -9,6 +9,7 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : { },
             "layoutDirectionDesktop" : "row",
             "layoutDirectionMobile" : "column",
             "layoutDirectionTablet" : "column",
@@ -22,6 +23,7 @@
             "children" : [ {
               "attributes" : {
                 "certificationCount" : 7,
+                "dxpStyle" : { },
                 "name" : "Liam Jeong",
                 "tagline" : "Salesforce professional with 8 years in development and consulting, experienced in building scalable architectures, modernizing legacy systems, and leading cross-functional delivery.",
                 "title" : "Senior Salesforce Developer & Engineer",
@@ -50,6 +52,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
+            "dxpStyle" : { },
             "pageTitle" : "Liam Jeong | Senior Salesforce Engineer",
             "recordId" : "{!recordId}"
           },

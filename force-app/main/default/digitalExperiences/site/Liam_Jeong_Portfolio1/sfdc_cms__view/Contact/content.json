@@ -9,6 +9,7 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : { },
             "layoutDirectionDesktop" : "row",
             "layoutDirectionMobile" : "column",
             "layoutDirectionTablet" : "column",
@@ -21,11 +22,18 @@
           "children" : [ {
             "children" : [ {
               "attributes" : {
-                "imageInfos" : "",
-                "richTextValue" : "<p>Contact</p>"
+                "availabilityText" : "Currently accepting new projects and collaborations.",
+                "dxpStyle" : { },
+                "linkedInProfileUrl" : "https://www.linkedin.com/in/liam-jeong-b009b2189/",
+                "locationText" : "DFW Area, TX United States · Remote friendly",
+                "pageSubtitle" : "Tell me about your Salesforce project, partnership idea, or team need.",
+                "pageTitle" : "Contact",
+                "recipientEmail" : "dev.liam.jeong@gmail.com",
+                "responseTime" : "Typically responds within 1 business day.",
+                "statusLabel" : "Open for new work"
               },
-              "definition" : "community_builder:htmlEditor",
-              "id" : "650bab97-bd3c-46b4-909f-ac80a77c232f",
+              "definition" : "c:portfolioContact",
+              "id" : "aa5b6b3d-7b7d-4e2c-9a3a-0c2c52f1c3d9",
               "type" : "component"
             } ],
             "id" : "123cfe2c-23a9-4a36-bd07-42308ef2730c",
@@ -46,6 +54,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
+            "dxpStyle" : { },
             "pageTitle" : "Liam Jeong | Contact",
             "recordId" : "{!recordId}"
           },

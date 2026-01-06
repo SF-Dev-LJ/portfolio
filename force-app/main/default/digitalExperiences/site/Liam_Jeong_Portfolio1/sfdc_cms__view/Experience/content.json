@@ -29,7 +29,8 @@
           "children" : [ {
             "children" : [ {
               "attributes" : {
-                "linkedInProfileUrl" : "https://www.linkedin.com/in/devliamjeong"
+                "dxpStyle" : { },
+                "linkedInProfileUrl" : "https://www.linkedin.com/in/liam-jeong-b009b2189/"
               },
               "definition" : "c:portfolioExperience",
               "id" : "14c69a6b-f4fd-43ac-aea2-63e6f0309655",
@@ -53,6 +54,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
+            "dxpStyle" : { },
             "pageTitle" : "Liam Jeong | Experience",
             "recordId" : "{!recordId}"
           },

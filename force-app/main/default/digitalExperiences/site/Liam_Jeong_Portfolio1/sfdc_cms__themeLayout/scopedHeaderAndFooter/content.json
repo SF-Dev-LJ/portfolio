@@ -36,6 +36,7 @@
             "children" : [ {
               "attributes" : {
                 "brandName" : "Liam Jeong",
+                "dxpStyle" : { },
                 "navigationItems" : "[{\"id\":\"home\",\"label\":\"Home\",\"url\":\"/\"},{\"id\":\"experience\",\"label\":\"Experience\",\"url\":\"/experience\"},{\"id\":\"projects\",\"label\":\"Projects\",\"url\":\"/projects\"},{\"id\":\"education\",\"label\":\"Education\",\"url\":\"/education\"},{\"id\":\"contact\",\"label\":\"Contact\",\"url\":\"/contact\"}]"
               },
               "definition" : "c:portfolioNavigation",
@@ -61,6 +62,7 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : { },
             "layoutDirectionDesktop" : "row",
             "layoutDirectionMobile" : "column",
             "layoutDirectionTablet" : "column",
@@ -74,6 +76,7 @@
             "children" : [ {
               "attributes" : {
                 "brandName" : "Liam Jeong",
+                "dxpStyle" : { },
                 "email" : "dev.liam.jeong@gmail.com",
                 "githubUrl" : "https://github.com/SF-Dev-LJ",
                 "linkedInUrl" : "https://www.linkedin.com/in/liam-jeong-b009b2189/",
