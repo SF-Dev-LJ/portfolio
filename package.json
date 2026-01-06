@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevLiamJeong/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevLiamJeong/portfolio/issues"
+  },
+  "homepage": "https://github.com/DevLiamJeong/portfolio#readme",
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}
