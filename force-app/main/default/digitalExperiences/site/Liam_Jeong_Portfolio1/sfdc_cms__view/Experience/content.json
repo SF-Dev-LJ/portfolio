@@ -1,6 +1,6 @@
 {
   "type" : "sfdc_cms__view",
-  "title" : "Experience",
+  "title" : "Liam Jeong | Experience",
   "contentBody" : {
     "component" : {
       "children" : [ {
@@ -29,11 +29,10 @@
           "children" : [ {
             "children" : [ {
               "attributes" : {
-                "imageInfos" : "",
-                "richTextValue" : "<p>Experience Page</p>"
+                "linkedInProfileUrl" : "https://www.linkedin.com/in/devliamjeong"
               },
-              "definition" : "community_builder:htmlEditor",
-              "id" : "35f4aa2a-610b-4edb-93b5-1183af159cd1",
+              "definition" : "c:portfolioExperience",
+              "id" : "14c69a6b-f4fd-43ac-aea2-63e6f0309655",
               "type" : "component"
             } ],
             "id" : "a6667269-a584-4fac-8ea5-cfef5585b085",
@@ -54,7 +53,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
-            "pageTitle" : "Experience",
+            "pageTitle" : "Liam Jeong | Experience",
             "recordId" : "{!recordId}"
           },
           "definition" : "community_builder:seoAssistant",

@@ -1,6 +1,6 @@
 {
   "type" : "sfdc_cms__view",
-  "title" : "Liams Portfolio",
+  "title" : "Liam Jeong | Senior Salesforce Engineer",
   "contentBody" : {
     "component" : {
       "children" : [ {
@@ -50,7 +50,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
-            "pageTitle" : "Liams Portfolio",
+            "pageTitle" : "Liam Jeong | Senior Salesforce Engineer",
             "recordId" : "{!recordId}"
           },
           "definition" : "community_builder:seoAssistant",

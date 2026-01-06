@@ -1,6 +1,6 @@
 {
   "type" : "sfdc_cms__view",
-  "title" : "Education",
+  "title" : "Liam Jeong | Education",
   "contentBody" : {
     "component" : {
       "children" : [ {
@@ -21,11 +21,10 @@
           "children" : [ {
             "children" : [ {
               "attributes" : {
-                "imageInfos" : "",
-                "richTextValue" : "<p>Education Page</p>"
+                "trailheadProfileUrl" : "https://www.salesforce.com/trailblazer/devliamjeong"
               },
-              "definition" : "community_builder:htmlEditor",
-              "id" : "75682b5d-5dc3-4023-97ff-3202ab97b190",
+              "definition" : "c:portfolioEducation",
+              "id" : "643af289-a0f8-4cdb-a165-1399be955410",
               "type" : "component"
             } ],
             "id" : "a9680b0b-c222-4935-94d1-fe9dff41569e",
@@ -46,7 +45,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
-            "pageTitle" : "Education",
+            "pageTitle" : "Liam Jeong | Education",
             "recordId" : "{!recordId}"
           },
           "definition" : "community_builder:seoAssistant",

@@ -1,6 +1,6 @@
 {
   "type" : "sfdc_cms__view",
-  "title" : "Contact",
+  "title" : "Liam Jeong | Contact",
   "contentBody" : {
     "component" : {
       "children" : [ {
@@ -46,7 +46,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
-            "pageTitle" : "Contact",
+            "pageTitle" : "Liam Jeong | Contact",
             "recordId" : "{!recordId}"
           },
           "definition" : "community_builder:seoAssistant",

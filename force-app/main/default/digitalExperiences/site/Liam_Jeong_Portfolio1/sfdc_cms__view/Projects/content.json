@@ -1,6 +1,6 @@
 {
   "type" : "sfdc_cms__view",
-  "title" : "Projects",
+  "title" : "Liam Jeong | Projects",
   "contentBody" : {
     "component" : {
       "children" : [ {
@@ -46,7 +46,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
-            "pageTitle" : "Projects",
+            "pageTitle" : "Liam Jeong | Projects",
             "recordId" : "{!recordId}"
           },
           "definition" : "community_builder:seoAssistant",
