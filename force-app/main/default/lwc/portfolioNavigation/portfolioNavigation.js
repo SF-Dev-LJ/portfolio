@@ -1,7 +1,7 @@
 import { LightningElement, api, track, wire } from 'lwc';
 import { NavigationMixin, CurrentPageReference } from 'lightning/navigation';
 import basePath from '@salesforce/community/basePath';
-import PORTFOLIO_LOGO from '@salesforce/resourceUrl/LJLogoBlue';
+import PORTFOLIO_LOGOS from '@salesforce/resourceUrl/portfolioLogos';
 
 /**
  * Portfolio Navigation Component
@@ -59,7 +59,7 @@ export default class PortfolioNavigation extends NavigationMixin(LightningElemen
      * Logo URL from static resource
      * @type {string}
      */
-    logoUrl = PORTFOLIO_LOGO;
+    logoUrl = `${PORTFOLIO_LOGOS}/LJ Logo(Blue).png`;
 
     /**
      * Logo alt text for accessibility
