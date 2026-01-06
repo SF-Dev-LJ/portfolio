@@ -173,10 +173,11 @@ export default class PortfolioExperience extends NavigationMixin(
 				],
 				skills: [
 					"Apex",
+					"Schedulable Apex",
 					"Batch Apex",
-					"Record-Triggered Flows",
+					"Flows",
+					"Process Builder",
 					"Process Automation",
-					"Triggers",
 					"SOQL",
 				],
 			},
