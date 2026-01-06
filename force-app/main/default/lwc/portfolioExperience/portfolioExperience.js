@@ -30,7 +30,8 @@ export default class PortfolioExperience extends NavigationMixin(
 	 * LinkedIn profile URL
 	 * @type {string}
 	 */
-	@api linkedInProfileUrl = "https://www.linkedin.com/in/devliamjeong";
+	@api linkedInProfileUrl =
+		"https://www.linkedin.com/in/liam-jeong-b009b2189/";
 
 	// ========================================
 	// Logo URLs from Static Resource
@@ -96,10 +97,12 @@ export default class PortfolioExperience extends NavigationMixin(
 				],
 				skills: [
 					"Lightning Web Components",
-					"Apex",
+					"Visualforce",
 					"Agentforce",
+					"Apex",
 					"CI/CD",
 					"Gearset",
+					"Exception handling Framework",
 					"Platform Events",
 				],
 			},
@@ -145,7 +148,8 @@ export default class PortfolioExperience extends NavigationMixin(
 				id: "exp-3",
 				company: "Revolent Group",
 				companyUrl: "https://www.revolent.com",
-				companyLinkLabel: "Visit Revolent Group website (opens in new tab)",
+				companyLinkLabel:
+					"Visit Revolent Group website (opens in new tab)",
 				role: "Salesforce Consultant @Publicis Sapient",
 				employmentType: "Contract",
 				location: "North Carolina, United States · Remote",
@@ -203,12 +207,15 @@ export default class PortfolioExperience extends NavigationMixin(
 					"Configured profiles, roles, permission sets, and validation rules to improve data accuracy and streamline daily operations",
 				],
 				skills: [
+					"Salesforce Administration",
 					"VB.NET",
-					"JavaScript",
 					"MSSQL",
 					"MongoDB",
+					"HTML5",
+					"Bootstrap",
+					"jQuery",
+					"JavaScript",
 					"AWS S3",
-					"Salesforce Administration",
 				],
 			},
 			{
@@ -272,13 +279,7 @@ export default class PortfolioExperience extends NavigationMixin(
 					"Contributed to the overall efficiency of unit operations through effective logistics management",
 					"Maintained high team morale and discipline throughout service",
 				],
-				skills: [
-					"Leadership",
-					"Team Management",
-					"Logistics",
-					"Strategic Planning",
-					"Training & Development",
-				],
+				skills: ["Leadership", "Team Management"],
 			},
 		];
 	}
