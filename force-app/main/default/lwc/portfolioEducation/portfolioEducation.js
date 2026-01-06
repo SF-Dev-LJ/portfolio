@@ -1,8 +1,7 @@
 import { LightningElement, api } from "lwc";
 import { NavigationMixin } from "lightning/navigation";
 import basePath from "@salesforce/community/basePath";
-import TUK_LOGO from "@salesforce/resourceUrl/TUkLogo";
-import TRAILHEAD_LOGO from "@salesforce/resourceUrl/TrailheadLogo";
+import PORTFOLIO_LOGOS from "@salesforce/resourceUrl/portfolioLogos";
 
 /**
  * Portfolio Education Component
@@ -31,6 +30,18 @@ export default class PortfolioEducation extends NavigationMixin(
 		"https://www.salesforce.com/trailblazer/devliamjeong";
 
 	// ========================================
+	// Logo URLs from Static Resource
+	// ========================================
+
+	get logoTUK() {
+		return `${PORTFOLIO_LOGOS}/Logo Tech University of Korea.svg`;
+	}
+
+	get logoTrailhead() {
+		return `${PORTFOLIO_LOGOS}/Logo Trailhead.png`;
+	}
+
+	// ========================================
 	// Formal Education Data
 	// ========================================
 
@@ -52,7 +63,7 @@ export default class PortfolioEducation extends NavigationMixin(
 				grade: "4.4 / 4.5",
 				honors: "Honored Student",
 				activities: null,
-				logoUrl: TUK_LOGO,
+				logoUrl: this.logoTUK,
 				logoInitials: "TU",
 				skills: [
 					"Object-Oriented Programming (OOP)",
@@ -76,7 +87,7 @@ export default class PortfolioEducation extends NavigationMixin(
 				honors: null,
 				activities:
 					"Vocalist in a band, Leader of Software Tutoring Group",
-				logoUrl: TUK_LOGO,
+				logoUrl: this.logoTUK,
 				logoInitials: "TU",
 				skills: [
 					"Software Development Life Cycle (SDLC)",
@@ -109,7 +120,7 @@ export default class PortfolioEducation extends NavigationMixin(
 				profileUrl: this.trailheadProfileUrl,
 				profileLinkLabel:
 					"View Trailhead profile for Liam Jeong (opens in new tab)",
-				logoUrl: TRAILHEAD_LOGO,
+				logoUrl: this.logoTrailhead,
 				logoInitials: "TH",
 				badgeUrl: null,
 				badgeAlt: "All Star Ranger Badge",
