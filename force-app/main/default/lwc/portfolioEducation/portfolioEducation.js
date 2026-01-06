@@ -3,6 +3,10 @@ import { NavigationMixin } from "lightning/navigation";
 import basePath from "@salesforce/community/basePath";
 import PORTFOLIO_LOGOS from "@salesforce/resourceUrl/portfolioLogos";
 
+// Static resource contains a subfolder named "portfolio logos" with the image files.
+const LOGO_BASE = `${PORTFOLIO_LOGOS}/portfolio logos`;
+const logoPath = (fileName) => `${LOGO_BASE}/${fileName}`;
+
 /**
  * Portfolio Education Component
  * A WCAG 2.1 AA compliant education page component for Experience Cloud portfolio sites.
@@ -34,11 +38,15 @@ export default class PortfolioEducation extends NavigationMixin(
 	// ========================================
 
 	get logoTUK() {
-		return `${PORTFOLIO_LOGOS}/Logo Tech University of Korea.svg`;
+		return logoPath("Logo Tech University of Korea.svg");
 	}
 
 	get logoTrailhead() {
-		return `${PORTFOLIO_LOGOS}/Logo Trailhead.png`;
+		return logoPath("Logo Trailhead.png");
+	}
+
+	get badgeAllStarRanger() {
+		return logoPath("Logo All Star Ranger.png");
 	}
 
 	// ========================================
@@ -116,13 +124,12 @@ export default class PortfolioEducation extends NavigationMixin(
 				platform: "Trailhead by Salesforce",
 				provider: "Salesforce",
 				year: "2019 – Present",
-				achievement: "ALL STAR RANGER",
 				profileUrl: this.trailheadProfileUrl,
 				profileLinkLabel:
 					"View Trailhead profile for Liam Jeong (opens in new tab)",
 				logoUrl: this.logoTrailhead,
 				logoInitials: "TH",
-				badgeUrl: null,
+				badgeUrl: this.badgeAllStarRanger,
 				badgeAlt: "All Star Ranger Badge",
 				skills: [
 					"Salesforce Architecture",

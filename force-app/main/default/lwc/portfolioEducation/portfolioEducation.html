@@ -135,11 +135,6 @@
                             </template>
                         </div>
                         <div class="learning-card-body">
-                            <template lwc:if={learning.achievement}>
-                                <div class="achievement-highlight">
-                                    <span class="achievement-label">{learning.achievement}</span>
-                                </div>
-                            </template>
                             <template lwc:if={learning.profileUrl}>
                                 <a 
                                     href={learning.profileUrl} 
@@ -187,4 +182,3 @@
         </div>
     </section>
 </template>
-
