@@ -5,8 +5,8 @@
     "component" : {
       "attributes" : {
         "hideThemeFooter" : false,
-        "showThemeFooterAtBottom" : false,
-        "stickyThemeHeader" : false
+        "showThemeFooterAtBottom" : true,
+        "stickyThemeHeader" : true
       },
       "children" : [ {
         "children" : [ {
@@ -36,19 +36,10 @@
             "children" : [ {
               "attributes" : {
                 "brandName" : "Liam Jeong",
-                "dxpStyle" : {
-                  "padding" : {
-                    "bottom" : "0px",
-                    "left" : "0px",
-                    "right" : "0px",
-                    "top" : "0px"
-                  }
-                },
-                "logoAltText" : "Logo",
                 "navigationItems" : "[{\"id\":\"home\",\"label\":\"Home\",\"url\":\"/\"},{\"id\":\"experience\",\"label\":\"Experience\",\"url\":\"/experience\"},{\"id\":\"projects\",\"label\":\"Projects\",\"url\":\"/projects\"},{\"id\":\"education\",\"label\":\"Education\",\"url\":\"/education\"},{\"id\":\"contact\",\"label\":\"Contact\",\"url\":\"/contact\"}]"
               },
               "definition" : "c:portfolioNavigation",
-              "id" : "19b2e696-6cc5-42c9-88e0-e3d71bf4e4f5",
+              "id" : "87749e6f-9335-4378-96e8-63d0710af58f",
               "type" : "component"
             } ],
             "id" : "e5cf4b67-790b-457e-80cb-43d6a4e19f8b",
@@ -80,6 +71,21 @@
             "sectionVerticalAlign" : "flex-start"
           },
           "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "brandName" : "Liam Jeong",
+                "email" : "dev.liam.jeong@gmail.com",
+                "githubUrl" : "https://github.com/SF-Dev-LJ",
+                "linkedInUrl" : "https://www.linkedin.com/in/liam-jeong-b009b2189/",
+                "location" : "Dallas, TX",
+                "navigationItems" : "[{\"id\":\"home\",\"label\":\"Home\",\"url\":\"/\"},{\"id\":\"experience\",\"label\":\"Experience\",\"url\":\"/experience\"},{\"id\":\"projects\",\"label\":\"Projects\",\"url\":\"/projects\"},{\"id\":\"education\",\"label\":\"Education\",\"url\":\"/education\"},{\"id\":\"contact\",\"label\":\"Contact\",\"url\":\"/contact\"}]",
+                "tagline" : "Salesforce Developer & Architect building innovative solutions on the Salesforce platform.",
+                "trailheadUrl" : "https://www.salesforce.com/trailblazer/devliamjeong"
+              },
+              "definition" : "c:portfolioFooter",
+              "id" : "859de30e-1198-446d-84aa-90de6f9990b7",
+              "type" : "component"
+            } ],
             "id" : "093f23e0-4225-46da-8899-a131530e992a",
             "name" : "footerSection",
             "title" : "Theme Footer",

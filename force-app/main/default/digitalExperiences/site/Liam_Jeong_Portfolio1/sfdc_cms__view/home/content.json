@@ -21,11 +21,15 @@
           "children" : [ {
             "children" : [ {
               "attributes" : {
-                "imageInfos" : "",
-                "richTextValue" : "<p>Home page.</p>"
+                "certificationCount" : 7,
+                "name" : "Liam Jeong",
+                "tagline" : "Salesforce professional with 8 years in development and consulting, experienced in building scalable architectures, modernizing legacy systems, and leading cross-functional delivery.",
+                "title" : "Senior Salesforce Developer & Engineer",
+                "trailheadUrl" : "https://www.salesforce.com/trailblazer/devliamjeong",
+                "yearsExperience" : 8
               },
-              "definition" : "community_builder:htmlEditor",
-              "id" : "e157b70c-7622-4d22-8d0e-6a851e9f2155",
+              "definition" : "c:portfolioHome",
+              "id" : "6fcd8e4d-5ab1-43f1-85b4-1b9aa3c1c055",
               "type" : "component"
             } ],
             "id" : "8c4d97ad-6028-443c-8b76-dc1e5949b81e",

@@ -22,10 +22,10 @@
             "children" : [ {
               "attributes" : {
                 "imageInfos" : "",
-                "richTextValue" : "<p>Contact Page</p>"
+                "richTextValue" : "<p>Contact</p>"
               },
               "definition" : "community_builder:htmlEditor",
-              "id" : "70cd6f49-b517-41d1-b4c1-acce9d64517e",
+              "id" : "650bab97-bd3c-46b4-909f-ac80a77c232f",
               "type" : "component"
             } ],
             "id" : "123cfe2c-23a9-4a36-bd07-42308ef2730c",
