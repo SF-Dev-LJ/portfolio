@@ -21,13 +21,9 @@
           },
           "children" : [ {
             "children" : [ {
-              "attributes" : {
-                "dxpStyle" : { },
-                "imageInfos" : "",
-                "richTextValue" : "<p>Projects Page.</p>"
-              },
-              "definition" : "community_builder:htmlEditor",
-              "id" : "ecfad860-194b-4900-8aea-769152bd6978",
+              "attributes" : { },
+              "definition" : "c:portfolioProjects",
+              "id" : "aa424216-f5d7-4a9c-98aa-71eb3f21b952",
               "type" : "component"
             } ],
             "id" : "b8189855-580e-4e86-b5e1-64eed67d3025",
