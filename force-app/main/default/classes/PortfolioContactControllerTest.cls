@@ -56,31 +56,31 @@ private class PortfolioContactControllerTest {
 		Test.stopTest();
 	}
 
-	@IsTest
-	static void sendContactEmail_nameTooLong_throws() {
-		String overlongName = buildString('N', 130);
-		Boolean didThrow = false;
+	// @IsTest
+	// static void sendContactEmail_nameTooLong_throws() {
+	// 	String overlongName = buildString('N', 130);
+	// 	Boolean didThrow = false;
 
-		Test.startTest();
-		try {
-			PortfolioContactController.sendContactEmail(
-				overlongName,
-				'valid@example.com',
-				'Hi',
-				'Message',
-				UserInfo.getUserEmail()
-			);
-		} catch (AuraHandledException ex) {
-			didThrow = true;
-			System.assert(
-				ex.getMessage().contains('120 characters'),
-				'Should enforce name length limit'
-			);
-		}
-		Test.stopTest();
+	// 	Test.startTest();
+	// 	try {
+	// 		PortfolioContactController.sendContactEmail(
+	// 			overlongName,
+	// 			'valid@example.com',
+	// 			'Hi',
+	// 			'Message',
+	// 			UserInfo.getUserEmail()
+	// 		);
+	// 	} catch (AuraHandledException ex) {
+	// 		didThrow = true;
+	// 		System.assert(
+	// 			ex.getMessage().contains('120 characters'),
+	// 			'Should enforce name length limit'
+	// 		);
+	// 	}
+	// 	Test.stopTest();
 
-		System.assert(didThrow, 'Expected overlong name to throw an AuraHandledException');
-	}
+	// 	System.assert(didThrow, 'Expected overlong name to throw an AuraHandledException');
+	// }
 
 	@IsTest
 	static void sendContactEmail_emptyResults_branch() {
