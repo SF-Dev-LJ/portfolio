@@ -1,0 +1,116 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Scoped Header and Footer",
+  "contentBody" : {
+    "component" : {
+      "attributes" : {
+        "hideThemeFooter" : false,
+        "showThemeFooterAtBottom" : true,
+        "stickyThemeHeader" : true
+      },
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "1rem",
+            "dxpStyle" : {
+              "isVisible" : true,
+              "padding" : {
+                "bottom" : "12px",
+                "left" : "24px",
+                "right" : "24px",
+                "top" : "12px"
+              }
+            },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"1185ad02-8fd3-4560-bf44-9a8e8d3f8557\",\"columns\":[{\"UUID\":\"e5cf4b67-790b-457e-80cb-43d6a4e19f8b\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "center"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "brandName" : "Liam Jeong",
+                "dxpStyle" : { },
+                "navigationItems" : "[{\"id\":\"home\",\"label\":\"Home\",\"url\":\"/\"},{\"id\":\"experience\",\"label\":\"Experience\",\"url\":\"/experience\"},{\"id\":\"projects\",\"label\":\"Projects\",\"url\":\"/projects\"},{\"id\":\"education\",\"label\":\"Education\",\"url\":\"/education\"},{\"id\":\"contact\",\"label\":\"Contact\",\"url\":\"/contact\"}]"
+              },
+              "definition" : "c:portfolioNavigation",
+              "id" : "87749e6f-9335-4378-96e8-63d0710af58f",
+              "type" : "component"
+            } ],
+            "id" : "e5cf4b67-790b-457e-80cb-43d6a4e19f8b",
+            "name" : "headerSection",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "1185ad02-8fd3-4560-bf44-9a8e8d3f8557",
+          "type" : "component"
+        } ],
+        "id" : "40e65943-32d9-4199-894c-c9720ecb069f",
+        "name" : "header",
+        "title" : "Theme Header",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"889a314e-c03d-432f-b29e-8188ad92d0c6\",\"columns\":[{\"UUID\":\"093f23e0-4225-46da-8899-a131530e992a\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "brandName" : "Liam Jeong",
+                "dxpStyle" : { },
+                "email" : "dev.liam.jeong@gmail.com",
+                "githubUrl" : "https://github.com/SF-Dev-LJ",
+                "linkedInUrl" : "https://www.linkedin.com/in/liam-jeong-b009b2189/",
+                "location" : "Dallas, TX",
+                "navigationItems" : "[{\"id\":\"home\",\"label\":\"Home\",\"url\":\"/\"},{\"id\":\"experience\",\"label\":\"Experience\",\"url\":\"/experience\"},{\"id\":\"projects\",\"label\":\"Projects\",\"url\":\"/projects\"},{\"id\":\"education\",\"label\":\"Education\",\"url\":\"/education\"},{\"id\":\"contact\",\"label\":\"Contact\",\"url\":\"/contact\"}]",
+                "tagline" : "Salesforce Developer & Architect building innovative solutions on the Salesforce platform.",
+                "trailheadUrl" : "https://www.salesforce.com/trailblazer/devliamjeong"
+              },
+              "definition" : "c:portfolioFooter",
+              "id" : "859de30e-1198-446d-84aa-90de6f9990b7",
+              "type" : "component"
+            } ],
+            "id" : "093f23e0-4225-46da-8899-a131530e992a",
+            "name" : "footerSection",
+            "title" : "Theme Footer",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "889a314e-c03d-432f-b29e-8188ad92d0c6",
+          "type" : "component"
+        } ],
+        "id" : "cb9ec227-90f1-46d0-a080-18f621ec66e2",
+        "name" : "footer",
+        "title" : "Theme Footer",
+        "type" : "region"
+      }, {
+        "id" : "db703b8d-9ebd-44bf-8e87-38813ccac9fa",
+        "name" : "default",
+        "type" : "region"
+      } ],
+      "definition" : "community_byo:scopedHeaderAndFooter",
+      "id" : "ce1d8ddc-2956-40d7-988f-cde917b774ab",
+      "type" : "component"
+    }
+  },
+  "urlName" : "scoped-header-and-footer"
+}
