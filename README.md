@@ -1,18 +1,49 @@
-# Salesforce DX Project: Next Steps
+# Portfolio (Salesforce DX)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Lightning Web Components portfolio site for showcasing projects, experience, and a contact form backed by Apex.
 
-## How Do You Plan to Deploy Your Changes?
+Live site: https://k2insurance.my.site.com/portfolio/
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Features
+- Projects grid and detail cards (`portfolioProjects`, `portfolioProject`, `portfolioProjectSummary`)
+- Experience timeline (`portfolioExperience`)
+- Contact form with server-side validation (`portfolioContact` + `PortfolioContactController`)
 
-## Configure Your Salesforce DX Project
+## Project Structure
+- `force-app/main/default/lwc/` — UI components (projects, experience, contact)
+- `force-app/main/default/classes/` — Apex controllers and tests
+- `config/` — scratch org definition and permission sets
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Prerequisites
+- Salesforce CLI installed
+- Access to a Dev Hub (for scratch orgs) or target sandbox/dev org
 
-## Read All About It
+## Quick Start (Scratch Org)
+```bash
+# Authenticate to your Dev Hub
+sfdx auth:web:login -d -a DevHub
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+# Create and open a scratch org
+sfdx force:org:create -s -f config/project-scratch-def.json -a portfolio-scratch
+
+# Push source and assign permissions (if applicable)
+sfdx force:source:push
+
+# Run Apex tests
+sfdx force:apex:test:run -n PortfolioContactControllerTest -r human -w 20
+
+# Open the app
+sfdx force:org:open
+```
+
+## Deploy to Sandbox/Dev Org (non-scratch)
+```bash
+# Authenticate to target org
+sfdx auth:web:login --setalias portfolio-target
+
+# Deploy source
+sfdx force:source:deploy -p force-app/main/default -u portfolio-target
+
+# Run tests
+sfdx force:apex:test:run -n PortfolioContactControllerTest -r human -u portfolio-target -w 20
+```
