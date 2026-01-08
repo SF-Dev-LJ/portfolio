@@ -2,23 +2,27 @@
 
 Lightning Web Components portfolio site for showcasing projects, experience, and a contact form backed by Apex.
 
-Live site: https://k2insurance.my.site.com/portfolio/
+Live site: https://sf.5sinfusion.com/portfolio/
 
 ## Features
+
 - Projects grid and detail cards (`portfolioProjects`, `portfolioProject`, `portfolioProjectSummary`)
 - Experience timeline (`portfolioExperience`)
 - Contact form with server-side validation (`portfolioContact` + `PortfolioContactController`)
 
 ## Project Structure
+
 - `force-app/main/default/lwc/` — UI components (projects, experience, contact)
 - `force-app/main/default/classes/` — Apex controllers and tests
 - `config/` — scratch org definition and permission sets
 
 ## Prerequisites
+
 - Salesforce CLI installed
 - Access to a Dev Hub (for scratch orgs) or target sandbox/dev org
 
 ## Quick Start (Scratch Org)
+
 ```bash
 # Authenticate to your Dev Hub
 sfdx auth:web:login -d -a DevHub
@@ -37,6 +41,7 @@ sfdx force:org:open
 ```
 
 ## Deploy to Sandbox/Dev Org (non-scratch)
+
 ```bash
 # Authenticate to target org
 sfdx auth:web:login --setalias portfolio-target
