@@ -21,7 +21,9 @@
           },
           "children" : [ {
             "children" : [ {
-              "attributes" : { },
+              "attributes" : {
+                "dxpStyle" : { }
+              },
               "definition" : "c:portfolioProjects",
               "id" : "aa424216-f5d7-4a9c-98aa-71eb3f21b952",
               "type" : "component"

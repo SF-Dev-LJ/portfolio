@@ -4,31 +4,10 @@
     <containerType>Network</containerType>
     <label>Default Navigation</label>
     <navigationMenuItem>
-        <label>Experience</label>
+        <label>Topics</label>
         <position>1</position>
         <publiclyAvailable>true</publiclyAvailable>
-        <target>/experience</target>
-        <type>InternalLink</type>
-    </navigationMenuItem>
-    <navigationMenuItem>
-        <label>Projects</label>
-        <position>2</position>
-        <publiclyAvailable>true</publiclyAvailable>
-        <target>/projects</target>
-        <type>InternalLink</type>
-    </navigationMenuItem>
-    <navigationMenuItem>
-        <label>Education</label>
-        <position>3</position>
-        <publiclyAvailable>true</publiclyAvailable>
-        <target>/education</target>
-        <type>InternalLink</type>
-    </navigationMenuItem>
-    <navigationMenuItem>
-        <label>Contact</label>
-        <position>4</position>
-        <publiclyAvailable>true</publiclyAvailable>
-        <target>/contact</target>
-        <type>InternalLink</type>
+        <target>ShowMoreTopics</target>
+        <type>NavigationalTopic</type>
     </navigationMenuItem>
 </NavigationMenu>
